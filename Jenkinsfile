@@ -10,7 +10,7 @@ pipeline{
         stage('Run docker image'){
             steps{
                 echo "Running docker image"
-                bat 'docker rm -f mypythonappflask || exit 0'
+                bat 'docker rm -f mycontainer || exit 0'
                 bat 'docker run -d -p 5001:5001 --name mycontainer mypythonappflask'
             }
         }
