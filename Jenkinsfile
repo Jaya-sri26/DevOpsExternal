@@ -16,7 +16,7 @@ pipeline{
         }
     }
     post{
-        sucess{
+        success{
             echo "The docker,build and run is successful"
         }
         failure{
